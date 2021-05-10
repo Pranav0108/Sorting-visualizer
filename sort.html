@@ -6,24 +6,55 @@
             "width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="bootstrap.js"></script>
     </head>
-    <body class="">
-        <div class="container">
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+    <body style="background-color: #09091b;">
+      <div class="container" id="code" style="width:20rem;float:right; ;">
+        <h2>Sample Code</h2>
+        <div class="card  bg-success text-white mb-3">
+            <div class="card-header" >C/C++ &nbsp;&nbsp;<button class="btn btn-dark" data-toggle="tooltip1" title="Copy to clipBoard!" id="copyC" type="button">copy</button>
+            </div>
+          <div class="card-body" >
+            <p class="card-text" id="C"></p>
+          </div>
+        </div>
+        
+        <div class="card bg-success text-white">
+            <div class="card-header">java &nbsp;&nbsp;<button class="btn btn-dark" data-toggle="tooltip2" title="Copy to clipBoard!" id="copyJ" type="button">copy</button>
+            </div>
+          <div class="card-body" id="java">Success card</div>
+        </div>
+        
+        <div class="card bg-secondary text-white">
+            <div class="card-header">Python&nbsp;&nbsp;<button class="btn btn-dark" data-toggle="tooltip3" title="Copy to clipBoard!" id="copyP" type="button">copy</button>
+            </div>
+          <div class="card-body" id="python">Success card</div>
+        </div>
+       
+      </div>
+        <div class="container" >
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-expand-md " style="position: sticky;" >
             <a class="navbar-brand" href="#">Game Of Sort</a>
-            <input id="ip" placeholder="enter number">&nbsp;
-            <button class="btn btn-outline-success" type="button" id='add' button="btn btn-outline-success">Add </button>&nbsp;
-            <button class="btn btn-outline-success" id='generatearray' button="btn btn-primary">generate Array </button>&nbsp;
-            <button class="btn btn-outline-success" id="BubbleSort" button="btn btn-primary">Bubble Sort</button>&nbsp;
-            <button class="btn btn-outline-success" id="InsertionSort" button="btn btn-primary"> Insertion Sort</button>&nbsp;
-            <button class="btn btn-outline-success" id="QuickSort" button="btn btn-primary"> Quick Sort</button>&nbsp;
-            <button class="btn btn-outline-success" id="CountSort" button="btn btn-primary"> Count Sort</button>&nbsp;
-            <button class="btn btn-outline-success" id="reset" button="btn btn-secondary">Reset</button>&nbsp;
+            <div class="input-group1">
+              <input id='ip' type="text" class="form-control" placeholder="Add" size="20">
+            </div>
+            <button class="btn  btn-danger navbar-btn" type="button" id='add' >Add </button>&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id='generatearray'  >Generate Array </button>&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id="BubbleSort"  >Bubble Sort</button>&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id="InsertionSort"  > Insertion Sort</button>&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id="QuickSort"  > Quick Sort</button>&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id="CountSort"  > Count Sort</button>&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id="MergeSort" >Merge Sort</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-outline-success" id="reset" >Reset</button>&nbsp;&nbsp;
+
         </div>
-        <div id="display" class="container"></div>
+        <div id="display" class="container" style="background-color: #09091b;z-index: -1;"></div>
         <div id="count"></div>
-        </div>
+    </div>
+    
+        
     </body>
     <script src="sort.js"> </script>
 </html>

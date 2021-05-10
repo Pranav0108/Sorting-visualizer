@@ -2,8 +2,15 @@
 margin: 0px;
 padding: 0px;
 box-sizing: border-box;
+background-color: transparent;
+color:white
 }
-
+div{
+	background: transparent;
+}
+.btn{
+	border-radius: 50%;
+}
 .header {
 font-size: 20px;
 text-align: center;
@@ -19,12 +26,15 @@ margin-top: 64px;
 }
 
 .block {
+	width:50%;
 height: 28px;
-background-color: #6b5b95;
+/* background-color: #6b5b95; */
 /*position: absolute;*/
 /*left: 0px;*/
 margin-top:-22px;
 transition: 0.2s all ease;
+/* background-color: #09091b; */
+background: transparent;
 }
 .block2{
 	float:left;
@@ -35,7 +45,6 @@ transition: 0.2s all ease;
 .block_id {
 display: block;
 position: absolute;
-color: black;
 
 text-align: center;
 margin-left: -50px;
@@ -67,4 +76,16 @@ background-color: cornflowerblue;
 #count{
 	margin-top:-180px;
 	float:top;
+}
+.footer1{
+	float:right;
+}
+div span{
+	width:10cm;
+	/* float:left; */
+	float:top;
+}
+div .card-body{
+	height: calc(25vh);
+	overflow-x: hidden;
 }
