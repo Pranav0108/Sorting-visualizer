@@ -785,8 +785,8 @@ async function QuickSort(l,r,delay=100){
         document.getElementById('code').style.display="none"
 
         document.querySelector('#generatearray').addEventListener('click',function(){
-            for(let i=0;i<50;i++){
-              let num=Number(Math.round(Math.random()*20)+1)
+            for(let i=0;i<20;i++){
+              let num=Number(Math.round(Math.random()*50)+1)
                 arr.push(num)
             }
             generatearray(arr)
