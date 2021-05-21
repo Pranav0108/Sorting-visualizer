@@ -266,7 +266,7 @@ async function QuickSort(l,r,delay=100){
          
   //Sorting by using frequency array
   var idx = 0;
-  for (var i = 0; i <=blocks.length; i += 1) {
+  for (var i = 0; i <=Math.max(...arr); i += 1) {
     var freq = document.getElementsByClassName("block_3");
   
     var temp = Number(freq[i].innerText);
